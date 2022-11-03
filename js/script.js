@@ -35,14 +35,16 @@ elePlayButton.addEventListener('click', function(){
 
 eleGuideButton.addEventListener('click', function () {
 
-    if (eleGuideButton.innerHTML == 'Guide') {
+    if (eleGuideButton.dataset.state == 'show-guide') {
         eleGuideButton.innerHTML = 'Resume';
+        eleGuideButton.dataset.state = 'show-game';
         eleGrid.classList.add('hidden');
         eleWelcome.classList.remove('hidden');
     }
 
     else {
         eleGuideButton.innerHTML = 'Guide';
+        eleGuideButton.dataset.state = 'show-guide';
         eleGrid.classList.remove('hidden');
         eleWelcome.classList.add('hidden');
     }
