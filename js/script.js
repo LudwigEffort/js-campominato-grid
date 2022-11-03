@@ -5,6 +5,8 @@ const eleWelcome = document.querySelector('.welcome');
 const eleGrid = document.querySelector('.grid');
 
 elePlayButton.addEventListener('click', function(){
+    eleGrid.innerHTML = ''; // this is for reset of the form output
+
     eleGrid.classList.remove('hidden');
     eleWelcome.classList.add('hidden');
      
