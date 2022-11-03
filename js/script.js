@@ -6,10 +6,11 @@ const eleGrid = document.querySelector('.grid');
 
 elePlayButton.addEventListener('click', function(){
     eleGrid.classList.remove('hidden');
-    eleWelcome.classList.add('hidden'); 
-
-    const nCell = 100;
+    eleWelcome.classList.add('hidden');
+     
+    const nCell = parseInt(eleLevelSelect.value);;
     const sideSquare = Math.sqrt(nCell);
+    eleGrid.style.setProperty('--sideSquare', sideSquare);
 
     for (let i = 1; i <= nCell; i++) {
         
