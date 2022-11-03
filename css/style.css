@@ -17,9 +17,9 @@ header {
     align-items: center ;
 }
 
-main {
+/* main {
     background-color: salmon;
-}
+} */
 
 footer{
     height: 100px;
@@ -27,8 +27,13 @@ footer{
 
 .container{
     display: flex;
-    
+    background-color: salmon;
+    height: 100%;
 }
+
+/* .welcome {
+    margin: auto;
+} */
 
 .grid {
     display: flex;
@@ -40,6 +45,9 @@ footer{
 }
 
 .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid black;
     height: calc(100% / 10);
     width: calc(100% / 10);
@@ -47,4 +55,8 @@ footer{
 
 .cell.active{
     background-color: gold;
+}
+
+.hidden {
+    display: none;
 }
