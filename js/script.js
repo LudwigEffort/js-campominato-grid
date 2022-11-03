@@ -1,16 +1,17 @@
 
 const elePlayButton = document.querySelector('#btn-play');
 const eleLevelSelect = document.querySelector('#level');
-const eleWelcome = document.querySelector('.welcome')
-const   eleGrid = document.querySelector('.grid');
+const eleWelcome = document.querySelector('.welcome');
+const eleGrid = document.querySelector('.grid');
 
 elePlayButton.addEventListener('click', function(){
     eleGrid.classList.remove('hidden');
     eleWelcome.classList.add('hidden'); 
 
-    let f = 100;
+    const nCell = 100;
+    const sideSquare = Math.sqrt(nCell);
 
-    for (let i = 1; i <= f; i++) {
+    for (let i = 1; i <= nCell; i++) {
         
         const eleCell = document.createElement('div');
         eleCell.classList.add('cell');
